@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOCIALS CAFE — Coffee, Food & Moments</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f5f3e9;color:#263d36}
+header{
+position:sticky;top:0;z-index:10;
+background:#f5f3e9;padding:20px 7%;
+display:flex;justify-content:space-between;
+align-items:center;border-bottom:1px solid #d9dfd3
+}
+.logo{font-size:24px;font-weight:900;letter-spacing:5px;color:#315f50}
+nav{display:flex;gap:22px}
+nav a{color:#315f50;text-decoration:none;font-size:14px}
+.hero{
+min-height:570px;display:flex;align-items:center;
+padding:70px 8%;
+background:linear-gradient(90deg,rgba(20,53,43,.8),rgba(20,53,43,.15)),
+url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600')
+center/cover
+}
+.hero-content{max-width:600px;color:white}
+.tag{letter-spacing:5px;font-size:12px;color:#d8e8d7}
+h1{font-size:clamp(45px,7vw,76px);line-height:1.08;margin:25px 0}
+.hero p{font-size:17px;line-height:1.8;margin-bottom:30px}
+.btn{
+display:inline-block;background:#c4dfc5;color:#254b3e;
+padding:15px 25px;border-radius:30px;
+text-decoration:none;font-weight:bold;transition:.3s
+}
+.btn:hover{background:white;transform:translateY(-3px)}
+section{padding:80px 7%}
+.heading{text-align:center;font-size:35px;margin-bottom:18px}
+.heading span{color:#648c72}
+.subtitle{text-align:center;color:#74877a;margin-bottom:40px}
+.about{
+max-width:750px;margin:auto;text-align:center;
+line-height:1.9;color:#63756b
+}
+.cards{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px
+}
+.card{
+background:#fff;border-radius:15px;overflow:hidden;
+box-shadow:0 5px 20px #263d3610;transition:.3s
+}
+.card:hover{transform:translateY(-7px)}
+.card img{width:100%;height:210px;object-fit:cover}
+.card-content{padding:22px}
+.card h3{font-size:22px;margin-bottom:10px}
+.card p{color:#758278;font-size:14px;line-height:1.7}
+.about-section{background:#e8eee4}
+.contact{text-align:center;background:#315f50;color:white}
+.contact p{margin:20px 0 28px;line-height:1.8;color:#dce8dc}
+.contact .btn{background:#d6e9d4}
+footer{
+text-align:center;padding:30px;
+background:#203e34;color:#c5d8c9;
+font-size:13px;line-height:2
+}
+@media(max-width:600px){
+header{padding:18px 4%}
+.logo{font-size:19px;letter-spacing:3px}
+nav{gap:12px}
+nav a{font-size:11px}
+.hero{min-height:520px;padding:45px 7%}
+.hero p{font-size:15px}
+section{padding:60px 6%}
+.heading{font-size:29px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">SOCIALS</div>
+<nav>
+<a href="#home">Главная</a>
+<a href="#menu">Меню</a>
+<a href="#about">О нас</a>
+<a href="#contact">Контакты</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<div class="hero-content">
+<div class="tag">COFFEE • FOOD • MOMENTS</div>
+<h1>Больше вкуса.<br>Больше эмоций.</h1>
+<p>Место для любимых завтраков, ароматного кофе,
+встреч с друзьями и приятных моментов.</p>
+<a href="#menu" class="btn">Открыть меню ↓</a>
+</div>
+</div>
+
+<section id="about" class="about-section">
+<h2 class="heading">Добро пожаловать в <span>SOCIALS</span></h2>
+<p class="about">
+Socials — пространство для встреч и общения.
+Здесь можно насладиться завтраком, открыть новые вкусы,
+выпить любимый кофе и провести время с близкими.
+</p>
+</section>
+
+<section id="menu">
+<h2 class="heading">Наши <span>вкусы</span></h2>
+<p class="subtitle">Вдохновение для каждого дня</p>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800" alt="Завтрак">
+<div class="card-content">
+<h3>Завтраки</h3>
+<p>Начни день с вкусного и красивого завтрака.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800" alt="Кофе">
+<div class="card-content">
+<h3>Кофе</h3>
+<p>Ароматные кофейные напитки для хорошего настроения.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800" alt="Десерт">
+<div class="card-content">
+<h3>Десерты</h3>
+<p>Сладкие моменты, которыми хочется делиться.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800" alt="Блюда">
+<div class="card-content">
+<h3>Основные блюда</h3>
+<p>Разнообразие вкусов для приятного обеда и ужина.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2 class="heading">Будем рады <span>встрече!</span></h2>
+<p>Ташкент, улица Тараса Шевченко, 36А<br>
+Телефон: +998 99 008 88 11</p>
+<a class="btn" href="tel:+998990088811">Позвонить нам</a>
+</section>
+
+<footer>
+SOCIALS CAFE — DEMO DESIGN<br>
+Концептуальный проект независимого разработчика.<br>
+Не является официальным сайтом Socials Cafe.
+</footer>
+
+</body>
+</html>
